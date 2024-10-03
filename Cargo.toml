@@ -1,0 +1,12 @@
+[package]
+description = "AXP2101 embedded-hal drivers"
+edition = "2021"
+keywords = ["no_std", "embedded", "embedded-hal", "pmu", "axp2101"]
+license = "MIT"
+name = "axp2101"
+version = "0.1.0"
+
+[dependencies]
+bitfield = "0.15.0"
+bitfield-struct = "0.9.0"
+embedded-hal = "1.0.0"
