@@ -1,3 +1,5 @@
+#![no_std]
+
 use bitfield_struct::bitfield;
 use embedded_hal::i2c::I2c;
 
