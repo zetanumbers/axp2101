@@ -1,3 +1,5 @@
+#![no_std]
+
 use bitfield_struct::bitfield;
 use embedded_hal::i2c::I2c;
 
@@ -420,7 +422,7 @@ where
         Ok(value)
     }
 
-    /// Gets the Vbat voltage by reading the high and low register values
+    /// Gets the Vbus voltage by reading the high and low register values
     pub fn get_vbus_voltage(&mut self) -> Result<u16, I2C::Error> {
         let value = self.read_u16(Register::VbusHigh)?;
         Ok(value)
